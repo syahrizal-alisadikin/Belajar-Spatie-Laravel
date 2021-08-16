@@ -30,7 +30,7 @@ class RoleController extends Controller
 
      public function store(Request $request)
     {
-        dd($request->permissions);
+        
         $this->validate($request, [
             'name' => 'required|unique:roles'
         ]);
