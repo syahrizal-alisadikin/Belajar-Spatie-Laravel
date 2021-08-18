@@ -70,21 +70,20 @@
                                 href="{{ route('admin.dashboard.index') }}"><i class="fas fa-tachometer-alt"></i>
                                 <span>Dashboard</span></a></li>
                         @can('posts.index')
-                        <li class="{{ setActive('admin/post') }}"><a class="nav-link"
-                                href="#"><i class="fas fa-book-open"></i>
-                                <span>Berita</span></a></li>
+                            <li class="{{ setActive('admin/post') }}"><a class="nav-link" href="{{ route('admin.post.index') }}
+                        "><i class="fas fa-book-open"></i>
+                        <span>Berita</span></a></li>
                         @endcan
 
                         @can('tags.index')
-                        <li class="{{ setActive('admin/tag') }}"><a class="nav-link"
-                                href="#"><i class="fas fa-tags"></i> <span>Tags</span></a>
-                        </li>
+                            <li class="{{ setActive('admin/tag') }}"><a class="nav-link" href="{{ route('admin.tag.index') }}"><i class="fas fa-tags"></i> <span>Tags</span></a>
+                            </li>
                         @endcan
 
                         @can('categories.index')
-                        <li class="{{ setActive('admin/category') }}"><a class="nav-link"
-                                href="#"><i class="fas fa-folder"></i>
-                                <span>Kategori</span></a></li>
+                            <li class="{{ setActive('admin/category') }}"><a class="nav-link" href="{{ route('admin.category.index') }}"><i class="fas fa-folder"></i>
+                            <span>Kategori</span></a>
+                            </li>
                         @endcan
 
                         @can('events.index')
